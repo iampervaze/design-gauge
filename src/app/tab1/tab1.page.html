@@ -21,7 +21,7 @@
         </ion-card>
       </ion-col>
       <ion-col size="8">
-        <ion-list class="accordion-list">
+        <!-- <ion-list class="accordion-list">
           <ion-list-header *ngFor="let item of categories; let i=index"
             [ngClass]="{'section-active': item.open, 'section': !item.open}" no-lines no-padding>
             <button ion-button ion-item detail-none (click)="toggleSection(i)">
@@ -46,7 +46,19 @@
         <ion-button (click)="save()">
           <ion-icon name="save"></ion-icon>
           <ion-label>Update</ion-label>
-        </ion-button>
+        </ion-button> -->
+
+        <ion-list>
+          <ion-list-header lines="none" no-padding>
+            <ion-button ion-item color="default">
+              <ion-icon name="arrow-dropright" slot="start"></ion-icon>
+              <ion-label>Save</ion-label>
+            </ion-button>
+          </ion-list-header>
+          <ion-item>
+
+          </ion-item>
+        </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
